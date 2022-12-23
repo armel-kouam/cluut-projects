@@ -72,11 +72,11 @@ list_price = [product.price for product in my_supermarket.products]
 total_price = sum(list_price)
 prod_total = len(my_supermarket.products)
 prod_durch = total_price/prod_total
-print(f'Ein Produkt kostet im Durchschnitt: {round(prod_durch,2)} €')
+print(f'Ein Produkt kostet im Durchschnitt: {prod_durch:.2f} €') #round(prod_durch, 2)
 
 # Wie viele Produkte hast du für jede Kategorie?
 categ = [prod.category for prod in my_supermarket.products]
-categ_count = Counter(categ)
+categ_count =dict(Counter(categ))
 print(f'die Produkte und Kategorie sind: {categ_count}')
 # Wie heißt der älteste Mitarbeiter?
 max_age = max(my_supermarket.employees , key=lambda x: x.age)
