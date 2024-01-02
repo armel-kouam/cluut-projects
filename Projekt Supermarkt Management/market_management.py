@@ -6,7 +6,8 @@ from collections import Counter
 # Wir wollen Mitarbeiter und Produkte aus zwei CSV Dateien einlesen und zu unserem Supermarkt hinzufügen.
 # Lese daher die Datei products.csv ein und speichere die Produkt-Zeilen als Tuple in der Liste products. 
 # Lese außerdem die Datei employees.csv ein und speichere die Mitarbeiter-Zeilen als Tuple in der Liste employees.
-product = pd.read_csv("products.csv", sep =";") #def __init__(self,  name, prod_id, category, price)
+product = pd.read_csv("products.csv", sep =";") 
+#def __init__(self,  name, prod_id, category, price)
 # print(product)
 # print(product.info())
                                     # column_names = ["C", "A", "B"]Prod_id;Name;Category;PRICE
